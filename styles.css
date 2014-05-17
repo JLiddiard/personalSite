@@ -1,0 +1,169 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* reset stylesheet above --- JL Code below */
+
+
+body, html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	font-family: 'Oswald', sans-serif;
+}
+
+.profile {
+	position: static;
+	float: right;
+	width: 300px;
+	padding-right: 200px;
+	padding-top: 90px;
+
+}
+
+.profileContent {
+	min-width: 100%;
+	height: 300px;
+	background-color: hsla(194, 8%, 50%, 0.33);
+	border-radius:5px;
+
+}
+
+.profileHead h1  {
+	font-size: 3em;
+	color: white;
+	margin-left: 15px;
+	padding-top: 10px;
+	
+}
+
+.profileHead h2 {
+	font-size: 1em;
+	color: white;
+	letter-spacing: 2px;
+	padding-top: 4%;
+	margin-left: 15px;
+}
+
+.profileSocial i {
+	padding-top: 15px;
+	margin-left: 15px;
+	font-size: 30px;
+
+}
+
+.profileSocial a{
+	text-decoration: none;
+	color: black;
+}
+
+.profileSocial a:hover{
+	text-decoration: none;
+	color: white;
+}
+
+.profileBody h3 {
+	font-size: 0.85em;
+	color: white;
+	line-height: 20px;
+	padding-top: 30px;
+	margin: 15px;
+	font-family: arial, sans-serif;
+}
+
+
+.background {
+	display:block;
+	width: 100%;
+	height: 100%;
+	background: url('jon1.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+
+@media print {
+	co
+}
+
+
+@media screen and (max-width:600px) {
+	.profile {
+		position: relative;
+		float: top;
+		width: 300px;
+		padding-top: 90px;
+		position: relative;
+		-webkit-transform: rotate(-270deg);
+		-moz-transform: rotate(-270deg);
+		-ms-transform: rotate(-270deg);
+		-o-transform: rotate(-270deg);
+		transform: rotate(-270deg);
+	}
+
+	.background {
+		position: absolute;
+	    width: 200%;
+	    height: 200%;
+		background: url('jon1.png') 0 0 repeat;
+		background-size: cover;
+		-webkit-transform: rotate(270deg);
+	    -moz-transform: rotate(270deg);
+	    -ms-transform: rotate(270deg);
+	    -o-transform: rotate(270deg);
+	    transform: rotate(270deg);
+		margin: 0;
+		padding: 0;
+		border: 0;
+		outline: 0;
+	}
+}
+
